@@ -4,21 +4,21 @@ in the community development.
 
 ## Getting Started
 
-The application is developed with Nativescript alongside with Angular 2, so the first requirement is to have Nativescript [installed] (https://docs.nativescript.org/start/quick-setup) 
+The application is developed with Nativescript alongside with Angular 2, so the first requirement is to have Nativescript [installed](https://docs.nativescript.org/start/quick-setup) 
 
 ### Prerequisites
 Some of the plugins used by the application require some further configuration. The instrucctions for each one is in their respective githubs repo, this is a list of those plugins:
 
-* [Nativescript google maps sdk] (https://github.com/dapriett/nativescript-google-maps-sdk)
-* [Nativescript oauth] (https://github.com/alexziskind1/nativescript-oauth)
-* [Nativescript plugin firebase] (https://github.com/EddyVerbruggen/nativescript-plugin-firebase)
-* [Nativescript telerik UI] (http://docs.telerik.com/devtools/nativescript-ui/getting-started)
+* [Nativescript google maps sdk](https://github.com/dapriett/nativescript-google-maps-sdk)
+* [Nativescript oauth](https://github.com/alexziskind1/nativescript-oauth)
+* [Nativescript plugin firebase](https://github.com/EddyVerbruggen/nativescript-plugin-firebase)
+* [Nativescript telerik UI](http://docs.telerik.com/devtools/nativescript-ui/getting-started)
 
 
 Smart Cities needs the following backends:
-* [AAA-backend](https://gitlab.priv.als/altus/aaa311-backend) for making authentication
-* [open311-backend](https://gitlab.priv.als/altus/open311-backend) for making community reports.
-* [messaging-backend](https://gitlab.priv.als/altus/messaging-backend) for managing notifications about community reports.
+* [AAA-backend](https://github.com/AltusConsulting/aaa311-backend) for making authentication
+* [open311-backend](https://github.com/AltusConsulting/open311-backend) for making community reports.
+* [messaging311-backend](https://github.com/AltusConsulting/messaging311-backend) for managing notifications about community reports.
 
 There are some changes you should do before running this project. In your `config.ts` file (located at the shared folder), you should add the URL of the AAA backend, open311 backend and messaging backend.
 
@@ -78,7 +78,7 @@ This is the initial version We use [SemVer](http://semver.org/) for versioning.
 
 ## Authors
 
-* [Altus Consulting Software Team] (https://github.com/AltusConsulting)
+* [Altus Consulting Software Team](https://github.com/AltusConsulting)
 
 ## License
 
