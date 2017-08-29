@@ -1,0 +1,55 @@
+<ActionBar #actionBar title="{{ 'reports' | L }}" class="action-bar">
+    <ActionItem text="{{ 'profile' | L }}" [nsRouterLink]="['/profile']" color="#FFFFFF" android.position="popup" ios.position="right" [visibility]="isAnonymous? 'collapse' : 'visible'">
+    </ActionItem>
+    <ActionItem text="{{ 'logout' | L }}" (tap)="logout()" color="#FFFFFF" android.position="popup" ios.position="left">
+    </ActionItem>
+    <ActionItem text="{{ 'settings' | L }}" [nsRouterLink]="['/settings']" color="#FFFFFF" android.position="popup"ios.position="right">
+    </ActionItem></ActionBar>
+<GridLayout rows="*">
+     <!-- IMPROVE-CITY -->
+    <GridLayout #map row="0"rows="*,auto">
+            <!-- MAP -->
+            <MapView #MapView row="0" rowspan="2" [latitude]="latitude" [longitude]="longitude" [zoom]="zoom"
+                    (mapReady)="onMapReady($event)" (markerSelect)="onMarkerEvent($event)" (markerSelect)="onMarkerEvent($event)"
+                    (cameraChanged)="onCameraChanged($event)" (coordinateTapped)="onCoordinateTapped($event)"
+                    [visibility]="isSearching? 'collapse' : 'visible'"></MapView>
+        
+            <!-- SEARCH BAR -->
+            <GridLayout #searchBar row="0" columns="*,auto,auto" class="textfield-location">
+                <TextField #search row="0" col="0" hint="{{ 'add_location' | L }}" [(ngModel)]="place" class="textfield Raleway" returnKeyType="done"></TextField>
+                
+                <Label col="1" text="&#xf057;" class="fa clear" [visibility]="isSearching ? 'visible' : 'collapse'" (tap)="clearText()"></Label>
+                <!-- CURRENT LOCATION ICON -->
+                <Image row="0" col="2" src="res://location" stretch="aspectFit" (tap)="getCurrentLocation()" class="imageSize" [visibility]="isSearching? 'collapse' : 'visible'"></Image>
+            
+            </GridLayout>
+            <!-- CONFIRM LOCATION -->
+            <GridLayout #confirm row="1" columns="*" class="ripple-container" [visibility]="isSearching || isSelectedReport ? 'collapse' : 'visible'">
+                <android>
+                    <Ripple row="0" (tap)="setPin()">
+                        <Label horizontalAlignment="center"  class="create-report Raleway" text="{{ 'confirm_location' | L }}" ></Label>
+                    </Ripple>
+                </android>
+                <ios>
+                    <Label row="0"  horizontalAlignment="center" (tap)="setPin()" class="create-report Raleway" text="{{ 'confirm_location' | L }}" ></Label>                    
+                </ios>
+            </GridLayout>
+            <!-- PIN -->
+            <Label row="0" rowspan="2" text="&#xf276;" class="fa pin" [visibility]="isSearching? 'collapse' : 'visible'"></Label>
+            <!-- LIST OF PLACES -->
+            <ListView row="1" [items]="placesSearch" class="list-places" [visibility]="isSearching? 'visible' : 'collapse'">
+                <ng-template let-item="item" let-i="index">
+                    <GridLayout class="list-item" (tap)="onItemTap(item.name,i)" >
+                        <Label [text]="item.name" class="Raleway"></Label>
+                    </GridLayout>
+                </ng-template>
+            </ListView>
+            <ActivityIndicator rowSpan="2" width="50" height="50" [busy]="loading"></ActivityIndicator>
+    </GridLayout>
+    <!-- REPORT DETAIL -->
+    <GridLayout #detail row="0" >
+        <report-detail  [report]="selectedReport"></report-detail>
+    </GridLayout>
+</GridLayout>
+
+

@@ -1,0 +1,106 @@
+/*
+In NativeScript, the app.css file is where you place CSS rules that
+you would like to apply to your entire application. Check out
+http://docs.nativescript.org/ui/styling for a full list of the CSS
+selectors and properties you can use to style UI components.
+
+/*
+In many cases you may want to use the NativeScript core theme instead
+of writing your own CSS rules. For a full list of class names in the theme
+refer to http://docs.nativescript.org/ui/theme.
+
+@import 'nativescript-theme-core/css/core.light.css';
+*/
+@import url("~/platform.css");
+
+
+.Raleway{
+    font-family: "Raleway-Regular"
+}
+
+.coverImage{
+    background-image: url("res://background");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.box{
+    border-color: white;
+    border-width: 1;
+    border-radius: 8;
+}
+
+.blackBox{
+    border-color: black;
+    border-width: 1;
+    border-radius: 8;
+}
+.bold{
+    font-weight: bold;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.centerh{
+    text-align: center;
+}
+
+.box-blue{
+    border-color: blue;
+    border-width: 1;
+    border-radius: 8;
+}
+
+.action-bar{
+    background-color: #0B4486;
+    color: white;
+}
+
+.text-blue{
+    color: #0B4486;
+}
+
+.text-white{
+    color: white;
+}
+
+.fa{
+    font-family: "FontAwesome"
+}
+
+Label{
+    font-size: 15;
+}
+
+.home{
+    padding: 0 20 0 0;
+    font-size: 25;
+}
+
+.opacity{
+    background-color: black;
+    opacity: 0.5;
+}
+
+.button-style{
+    background-color: #0B4486;
+    color: white;
+}
+
+TextField{
+    padding: 10;
+}
+
+.activity{
+    width: 25;
+    height: 25;
+    color: gray;
+    vertical-align: center;
+}
+
+.ripple-container {
+    margin: 0% 5% 5% 5%;
+}

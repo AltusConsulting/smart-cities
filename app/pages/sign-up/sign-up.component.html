@@ -1,0 +1,30 @@
+<GridLayout rows="*">
+    <GridLayout row="0" rows="auto,auto,*" class="coverImage">
+        <Label row="0" rowspan="6" class="opacity"></Label>
+        <!-- CAMERA ICON-->
+        <StackLayout row="0" class="circle" (tap)='uploadImage()' [visibility]="isVisibleImage? 'collapse' : 'visible'"
+            verticalAlignment="center">
+            <Image  rowspan="2" src="res://camera_blue" id="image" stretch="aspectFit" class="camera"></Image>
+            <Label text="{{ 'upload_image' | L }}" verticalAlignment="bottom" class="text-blue Raleway"></Label>
+        </StackLayout>
+        <!-- IMAGE UPLOAD-->
+        <GridLayout row="0" class="margin">
+            <Image [src]="image" id="image" class="imageReport" stretch="aspectFill"></Image>
+            <!-- LITTLE CAMERA ICON-->
+            <GridLayout class="circle-camera-icon"  [visibility]= "isVisibleImage?  'visible':'collapse'" (tap)='uploadImage()'>
+                <Label text="&#xf030;" class="fa camera-icon" verticalAlignment="center" ></Label>
+            </GridLayout>
+        </GridLayout>
+        <!-- USER INFORMATION -->
+        <ScrollView row="2">
+            <GridLayout row="2" rows="auto,auto,auto,auto,auto">
+                <TextField #username row="0" class="box input Raleway" hint="{{ 'username' | L }}" [(ngModel)]="user.Username"></TextField>
+                <TextField #email row="1" class="box input Raleway" hint="{{ 'email' | L }}" [(ngModel)]="user.Email" keyboardType="email"></TextField>
+                <TextField #password row="2" class="box input Raleway" hint="{{ 'password' | L }}" [(ngModel)]="user.Password" secure="true"></TextField>
+                <TextField #repeat row="3" class="box input Raleway" hint="{{'repeat_password' | L}}" [(ngModel)]="repeatPassword" secure="true"></TextField>
+                <Button #register row="4" class="facebook-button text-white height Raleway" text="{{ 'create_account' | L }}" (tap)="signUp()"></Button>
+            </GridLayout>
+        </ScrollView>
+    </GridLayout>
+    <ActivityIndicator row="0" width="50" height="50" [busy]="isSaving"></ActivityIndicator>
+</GridLayout>

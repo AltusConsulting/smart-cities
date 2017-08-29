@@ -1,0 +1,67 @@
+<ActionBar title="{{ 'reports' | L }}" class="action-bar">
+    <NavigationButton android.systemIcon="ic_menu_back" (tap)="goBack()"></NavigationButton>
+    <ActionItem   (tap)="goHome()"  android.position="right" ios.position="right">
+        <Label text="&#xf015;" class="fa home" color="white"></Label>
+    </ActionItem>
+</ActionBar>
+<ScrollView>
+<GridLayout rows="*,*,*,*,*" columns="*,*" class="margin">
+    <GridLayout row="0" col="0" rows="2*,*" columns="*" backgroundColor="#6FC7C2" class="marginOption" (tap)="tapped('Daño de agua', 'res://water')">
+        <Image row="0" col="0" src="res://water" class="sizeImage" stretch="aspectFit" horizontalAlignment="center"></Image>
+        <Label row="1" text="{{ 'water_damage' | L }}" class="categoryLabel Raleway"></Label>
+        
+    </GridLayout>
+    
+    <GridLayout row="1" col="0" rows="2*,*" columns="*" backgroundColor="#B95B5D" class="marginOption" (tap)="tapped('Acera bloqueada','res://blocked')">
+        <Image row="0" col="0"  src="res://blocked" class="sizeImage" stretch="aspectFit" horizontalAlignment="center"></Image>
+        <Label row="1" text="{{ 'blocked_sidewalk' | L }}" class="categoryLabel Raleway"></Label>
+    </GridLayout>
+
+    <GridLayout row="2" col="0" rows="2*,*" columns="*" backgroundColor="#9B789E" class="marginOption" (tap)="tapped('Señal tránsito','res://signal')">
+            <Image row="0" col="0"  src="res://signal" class="sizeImage" stretch="aspectFit" horizontalAlignment="center"></Image>
+            <Label row="1" text="{{ 'traffic_signal' | L }}" class="categoryLabel Raleway"></Label>
+    </GridLayout>
+    <GridLayout row="3" col="0" rows="2*,*" columns="*" backgroundColor="#ADA1A1" class="marginOption" (tap)="tapped('Malos olores','res://bad_smells')">
+        <Image row="0" col="0" src="res://bad_smells" class="sizeImage" stretch="aspectFit" horizontalAlignment="center"></Image>
+        <Label row="1" text="{{ 'bad_smells' | L }}" class="categoryLabel Raleway"></Label>
+    </GridLayout>
+    <GridLayout row="4" col="0" rows="2*,*" columns="*" backgroundColor="#FDDC72" class="marginOption" (tap)="tapped('Daño de luz','res://light')">
+        <Image row="0" col="0" src="res://light" class="sizeImage" stretch="aspectFit" horizontalAlignment="center"></Image>
+        <Label row="1" text="{{ 'light_damage' | L }}" class="categoryLabel Raleway"></Label>
+    </GridLayout>
+    <GridLayout row="0" col="1" rows="2*,*" columns="*" backgroundColor="#B6C965" class="marginOption" (tap)="tapped('Hueco','res://hole')">
+        
+         <Image row="0" col="0" src="res://hole" class="sizeImage" stretch="aspectFit" horizontalAlignment="center"></Image>
+         <Label row="1" text="{{ 'hole' | L }}" class="categoryLabel Raleway"></Label>
+       
+    </GridLayout>
+    <GridLayout row="1" col="1" rows="2*,*" columns="*" backgroundColor="#57636F" class="marginOption" (tap)="tapped('Basura','res://garbage')">
+        
+            <Image row="0" col="0" src="res://garbage" class="sizeImage" stretch="aspectFit" horizontalAlignment="center"></Image>
+        
+            <Label row="1" text="{{ 'garbage' | L }}" class="categoryLabel Raleway"></Label>
+        
+    </GridLayout>
+    <GridLayout row="2" col="1" rows="2*,*" columns="*" backgroundColor="#F07B73" class="marginOption" (tap)="tapped('Buen ejemplo','res://heart')">
+        
+            <Image row="0" col="0" src="res://heart" class="sizeImage" stretch="aspectFit" horizontalAlignment="center"></Image>
+       
+            <Label row="1" text="{{ 'good_example' | L }}" class="categoryLabel Raleway"></Label>
+        
+    </GridLayout>
+    <GridLayout row="3" col="1" rows="2*,*" columns="*" backgroundColor="#E58761" class="marginOption" (tap)="tapped('Otra','res://question')">
+        
+            <Image row="0" col="0" src="res://question" class="sizeImage" stretch="aspectFit" horizontalAlignment="center"></Image>
+       
+            <Label row="1" text="{{ 'other' | L }}" class="categoryLabel Raleway"></Label>
+       
+    </GridLayout>
+    <GridLayout row="4" col="1" rows="2*,*" columns="*" backgroundColor="#4389A8" class="marginOption" (tap)="tapped('Agua empozada','res://water2')">
+        
+        <Image row="0" col="0" src="res://water2" class="sizeImage" stretch="aspectFit" horizontalAlignment="center"></Image>
+        
+        <Label row="1" text="{{ 'stagnant_water' | L }}" class="categoryLabel Raleway"></Label>
+       
+    </GridLayout>
+</GridLayout>
+</ScrollView>

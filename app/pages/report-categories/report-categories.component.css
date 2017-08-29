@@ -1,0 +1,20 @@
+.sizeImage{
+    width: 75;
+    height: 75;
+    vertical-align: bottom;
+}
+
+.margin{
+    margin: 10 25 10 25;
+}
+
+.marginOption{
+    margin: 5;
+    height: 150;
+}
+
+.categoryLabel{
+    horizontal-align: center;
+    vertical-align: top;
+    color: white;
+}

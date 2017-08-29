@@ -1,0 +1,40 @@
+<GridLayout rows="auto, auto,*,auto" class="coverImage">
+    <!-- HOME ICON -->
+    <Label row="0" text="&#xf015;" class="fa home" (tap)="goHome()"></Label>
+    <Image row="0" src="res://arrow_back" class="back" (tap)="goBack()"></Image>
+    <!--CAMERA IMAGE-->
+    <StackLayout #cameraImage row="1" class="circle" (tap)='uploadImage()' [visibility]="isVisibleImage? 'collapse' : 'visible'"
+        verticalAlignment="center">
+        <Image rowspan="2" src="res://camera_white" stretch="aspectFit" class="camera"></Image>
+        <Label text="{{ 'upload_image' | L }}" verticalAlignment="bottom" color="white" class="Raleway"></Label>
+    </StackLayout>
+    <!--LOAD IMAGE-->
+    <GridLayout row="1" class="margin">
+            
+        <Image [src]="image" class="imageReport" stretch="aspectFill"></Image>
+        <!-- LITTLE CAMERA ICON -->
+        <GridLayout class="circle-camera-icon"  [visibility]= "isVisibleImage?  'visible':'collapse'" (tap)='uploadImage()'>
+            <Label text="&#xf030;" class="fa camera-icon Raleway" verticalAlignment="center" ></Label>
+        </GridLayout>
+    
+    </GridLayout>
+    
+    <GridLayout row="2" rows="auto,auto,*,auto" verticalAlignment="center">
+        <!--REPORT TYPE-->
+        <GridLayout row="0" columns="auto,*" horizontalAlignment="center">
+                <Image col="0" [src]="imageCategory" stretch='aspectFit' class="categoryImage"></Image>
+                <Label col="1" [text]="category" class="categoryLabel Raleway"></Label>
+        </GridLayout>
+        <Border #border row="1" borderWidth="1" borderColor="#0B4486" borderRadius="0" margin="15"></Border>
+        <!--DESCRIPTION-->
+        <TextView row="2" hint="{{ 'description' | L }}" class="textfield-format Raleway" [(ngModel)]="description" 
+                returnKeyType="send" (returnPress)="submit($event)" editable="true" height="100"></TextView>
+        <!--ANONYMUS CHECKBOX-->
+        <CheckBox row="3" #checkbox class="checkbox Raleway" fillColor="white" text="{{ 'anonymous' | L }}" checked="false"></CheckBox>
+    </GridLayout>
+    <!--ACCEPT BUTTON-->
+    <Button #accept row="3" (tap)="createReport()" class="accept height Raleway" text="{{ 'accept' | L }}" horizontalAlignment="center"></Button>
+    
+
+    <ActivityIndicator row="0" rowspan="3" width="50" height="50" [busy]="isSaving"></ActivityIndicator>
+</GridLayout>

@@ -1,0 +1,76 @@
+
+.facebook-button{
+    margin: 10 0 10 0;
+    width: 70%;
+    border-radius: 4;
+    background-color: #0B4486;
+    font-size: 15;
+    text-transform: lowercase;
+    border-radius: 10;
+}
+
+.input{
+    margin: 10 0 10 0;
+    width: 70%;
+    color: white;
+    text-align: center;
+    placeholder-color: white;
+}
+
+.logo{
+    margin: 15 15 0 15;
+    height: 150;
+    width: 150;
+}
+
+.opacity{
+    background-color: black;
+    opacity: 0.5;
+}
+
+
+.circle{
+    background-color: white;
+    color: white;
+    width: 150;
+    height:150;
+    border-radius: 80;
+    border-width: 1;
+    border-color: white;
+    text-align: center;
+    margin : 5% 0% 5% 0%;
+}
+
+.camera{
+    width: 70%;
+    height: 40%;
+    margin: 5% 0% 5% 0%
+}
+
+.margin{
+    margin: 5% 0% 5% 0%;
+}
+
+.imageReport{
+    width: 150;
+    height: 150;
+    border-radius: 80;
+}
+
+.circle-camera-icon{
+    background-color: #0B4486;
+    color: white;
+    width: 50;
+    height: 50;
+    border-radius: 80;
+    border-width: 1;
+    border-color: #0B4486;
+    text-align: center;
+    margin: 100 0 0 100;
+}
+
+.camera-icon{
+    font-size: 20;
+    color: white;
+    text-align: center;
+}

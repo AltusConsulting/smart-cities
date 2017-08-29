@@ -1,0 +1,37 @@
+.alert{
+    font-weight: bold;
+    text-align: center;
+    color:white;
+    margin: 20;
+    font-size: 20;
+}
+
+.description{
+    color: white;
+    text-align: center;
+}
+
+.view-report{
+    text-align: center;
+    padding: 5;
+    color: white;
+    border-color: white;
+    border-radius: 8;
+    border-width: 1;
+    background-color: transparent;
+    width: 40%;
+}
+
+.skip{
+    color: white;
+    text-align: center;
+    width: 40%;
+    margin: 10;
+}
+
+.coverImage{
+    background-image: url("res://alert_background");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

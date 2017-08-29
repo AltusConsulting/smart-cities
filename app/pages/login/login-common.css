@@ -1,0 +1,58 @@
+.input{
+    margin: 10 0 5 0;
+    width: 70%;
+    color: white;
+    text-align: center;
+    font-size: 15;
+    placeholder-color:white;
+}
+
+
+.button{
+    margin: 10 0 25 0;
+    opacity: 0.8;
+    width: 70%;
+    border-radius: 4;
+    background-color: white;
+    font-size: 15;
+    text-transform: lowercase;
+    font-weight: bold;
+    text-align: center;
+    padding: 15;
+    height: 50; /* Applied on iOS */
+}
+
+.facebook-button{
+    padding: 15;
+    margin: -7 0 5 0;
+    width: 70%;
+    border-radius: 4;
+    background-color: #0B4486;
+    font-size: 15;
+    text-transform: lowercase;
+    font-style: normal;
+}
+
+
+
+.sign-up-label{
+    padding: 10;
+    margin: 0;
+    color: white;
+    opacity: 1;
+    font-size: 15;
+    font-weight: bold;
+    text-align: center
+}
+
+.logo{
+    margin: 80 50 50 50;
+    height: 22%;
+    width: 42%;
+}
+
+.checkbox{
+    color: white;
+    margin: 0;
+}
+

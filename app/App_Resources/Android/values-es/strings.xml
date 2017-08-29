@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">Smart Cities</string>
+    <string name="title_activity_kimera">Smart Cities</string>
+    <!--App component strings-->
+    <string name="check_it">Revisar</string>
+    <string name="not_now">Ahora no</string>
+    <!--Login component strings-->
+    <string name="email">Correo electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="login_facebook">Iniciar sesión con Facebook</string>
+    <string name="sign_up">Crear cuenta nueva</string>
+    <string name="forgot_password">Olvido su contraseña?</string>
+    <string name="anonymous">Anónimo</string>
+    <string name="anonymous_login">Sesión iniciada como usuario anónimo</string>
+    <string name="username_password">Ingrese el nombre de usuario y la contraseña</string>
+    <string name="username_missing">Ingrese el nombre de usuario</string>
+    <string name="password_missing">Ingrese la contraseña</string>
+    <string name="facebook_error">Ocurrió un error durante la autenticación con Facebook, inténtelo de nuevo.</string>
+    <!--Sign up component strings-->
+    <string name="upload_image">Subir imagen</string>
+    <string name="username">Nombre de usuario</string>
+    <string name="create_account">Crear cuenta</string>
+    <string name="cancel">Cancelar</string>
+    <string name="take_photo">Tomar foto</string>
+    <string name="see_gallery">Ver galería</string>
+    <string name="sign_up_missing">Nombre de usuario, contraseña y correo electronico son necesarios para crear una cuenta nueva!</string>
+    <string name="user_created">Usuario creado exitosamente!</string>
+    <string name="repeat_password">Repetir contraseña</string>
+    <!--password change component strings-->
+    <string name="current_password">Contraseña actual</string>
+    <string name="new_password">Nueva contraseña</string>
+    <string name="repeat_new_password">Confirmar nueva contraseña</string>
+    <string name="save_change">Guardar cambios</string>
+    <string name="password_changed">Su contraseña se ha actualizado!</string>
+    <string name="different_password">Las contraseñas deben seri iguales, Ingreselas nuevamente!</string>
+    <string name="current_password_incorrect">La contraseña actual es incorrecta. Intentelo de nuevo</string>
+    <string name="fields_required">Todos los campos son necesarios para cambiar la contraseña</string>
+    <!--Alert component strings-->
+    <string name="alert">ALERTA</string>
+    <string name="view_alert">Ver reporte</string>
+    <string name="skip">Omitir</string>
+    <!--Improve city component strings-->
+    <string name="logout">Cerrar sesión</string>
+    <string name="profile">Perfil</string>
+    <string name="reports">Reporte</string>
+    <string name="add_location">Agregar ubicación</string>
+    <string name="generate_report">Generar reporte</string>
+    <string name="confirm_location">Confirmar ubicación</string>
+    <string name="repeated_marker">El marcador ya se agrego anteriormente</string>
+    <string name="gps_disabled">No se logro obtener la ubicación actual, verifique que el GPS esta activado e intente nuevamente</string>
+    <string name="see_more">Ver más...</string>
+    <string name="not_found_report">No se encontró este reporte</string>
+    <!--Report component strings-->
+    <string name="report_type">Tipo de reporte</string>
+    <string name="description">Descripción</string>
+    <string name="accept">Aceptar</string>
+    <string name="report_created">Reporte creado</string>
+    <string name="report_created_no_image">Reporte creado. Ocurrió un error al guardar imagen</string>
+    <string name="report_title">Nuevo Reporte</string>
+    <string name="report_body">Un nuevo reporte ha sido creado</string>
+    <!--Report detail strings-->
+    <string name="report">Reporte</string>
+    <string name="no_image">Sin imagen</string>
+    <!--Profile component strings-->
+    <string name="change_password">Cambiar contraseña</string>
+    <string name="see_user_ranking">Ver ranking de usuarios</string>
+    <string name="no_changes_detected">No hay cambios para guardar</string>
+    <string name="info_updated">Su información personal fue actualizada</string>
+    <string name="valid_email">Ingrese un correo válido</string>
+    <string name="no_user_profile">Este usuario no tiene foto de perfil</string>
+    <string name="cant_load_image">No se pudo cargar foto"</string>
+    <string name="image_error">Ocurrió un error al guardar la imagen</string>
+    <!--Report Categories component strings-->
+    <string name="water_damage">Daño de agua</string>
+    <string name="hole">Hueco</string>
+    <string name="blocked_sidewalk">Acera bloqueada</string>
+    <string name="garbage">Basura</string>
+    <string name="traffic_signal">Señal de transito</string>
+    <string name="good_example">Buen ejemplo</string>
+    <string name="bad_smells">Malos olores</string>
+    <string name="other">Otra</string>
+    <string name="light_damage">Daño de luz</string>
+    <string name="stagnant_water">Agua empozada</string>
+    <!--Error strings-->
+    <string name="update_user_error">La información de usuario no se pudo actualizar</string>
+    <string name="unauthorized_user">usuario no autorizado, nombre de usuario o contraseña incorrectos</string>
+    <string name="connection_error">No se pudo contactar con el servidor, verifique que esta conectado al intenet</string>
+    <string name="timeout_error">No se obtuvo respuesta del servidor</string>
+    <!--Date strings-->
+    <string name="sunday">Domingo</string>
+    <string name="monday">Lunes</string>
+    <string name="tuesday">Martes</string>
+    <string name="wednesday">Miércoles</string>
+    <string name="thursday">Jueves</string>
+    <string name="friday">Viernes</string>
+    <string name="saturday">Sabado</string>
+    <string name="january">Enero</string>
+    <string name="february">Febrero</string>
+    <string name="march">Marzo</string>
+    <string name="april">Abril</string>
+    <string name="may">Mayo</string>
+    <string name="june">Junio</string>
+    <string name="july">Julio</string>
+    <string name="august">Agosto</string>
+    <string name="september">Septiembre</string>
+    <string name="october">Octubre</string>
+    <string name="november">Noviembre</string>
+    <string name="december">Diciembre</string>
+    <!---Settings component strings-->
+    <string name="settings">Configuración</string>
+    <string name="notifications">Notificaciones</string>
+    <string name="alerts">Alertas</string>
+    <string name="api_report">API de reportes</string>
+    <string name="confirm_title">API de reportes cambiado</string>
+    <string name="confirm_message">Seguro que desea cambiar la dirección del API de reportes por </string>
+    <string name="api_updates">API actualizado</string>
+    <string name="servers">Servers</string>
+    <!--Other strings-->
+    <string name="to_be_implementd">to be implemented</string>
+</resources>

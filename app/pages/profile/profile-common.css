@@ -1,0 +1,97 @@
+.margin{
+    margin: 10;
+}
+
+.username{
+    margin: 10 0 10 10;
+    color: black;
+    font-size: 19;
+}
+
+.textfield{
+    background-color: white;
+    border-radius: 8;
+    border-width: 1;
+    border-color: #0B4486;
+    height: 50;
+}
+
+.icon{
+    color: #0B4486;
+    padding: 10;
+    vertical-align: center;
+}
+.imageReport{
+    width: 150;
+    height: 150;
+    border-radius: 80;
+}
+
+.border{
+    border-color: white;
+    border-bottom-color: darkgray;
+}
+
+
+.profileImage{
+    width: 150;
+    height: 150;
+    border-radius: 80;
+}
+
+.circle-camera-icon{
+    background-color: #0B4486;
+    color: white;
+    width: 50;
+    height: 50;
+    border-radius: 80;
+    border-width: 1;
+    border-color: #0B4486;
+    text-align: center;
+    margin: 100 0 0 100;
+}
+
+.camera-icon{
+    font-size: 20;
+    color: white;
+    text-align: center;
+}
+
+.camera{
+    width: 70%;
+    height: 40%;
+    margin: 0% 0% 5% 0%
+}
+
+.circle{
+    background-color: #0B4486;
+    color: white;
+    width: 150;
+    height:150;
+    border-radius: 80;
+    border-width: 1;
+    border-color: #0B4486;
+    text-align: center;
+    margin: 15% 0% 5% 0%
+}
+
+.star{
+    padding:2;
+    color:lightseagreen;
+    font-size: 20;
+}
+
+Label{
+    color: #0B4486
+}
+
+.save{
+    background-color: #0B4486;
+    color: white;
+    border-radius: 8;
+    border-width: 1;
+    border-color: #0B4486;
+    margin: 20 10 10 10;
+    padding: 15;
+    text-align: center;
+}

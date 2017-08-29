@@ -1,0 +1,83 @@
+.pin{
+    vertical-align: center;
+    text-align: center;
+    font-size: 30;
+    margin-bottom: 30;
+    color: #0B4486;
+}
+
+.textfield-location{
+    background-color: white;
+    border-radius: 8;
+    border-width: 1;
+    border-color: #808080;
+    margin: 10% 5% 0% 5%;
+    padding: 5% 0% 5% 5%;
+    vertical-align: top;
+    height: 50;
+}
+
+.imageSize{
+    height: 50;
+    width: 50; 
+    margin: 0% 2% 0% 2%;
+    border-left-color: #808080;
+}
+
+.textfield{
+    border-width: 1;
+    border-color: white;
+    vertical-align: center;
+    font-size: 15;
+}
+
+
+.create-report{
+    background-color: #0B4486;
+    color: white;
+    border-radius: 8;
+    border-width: 1;
+    border-color: #0B4486;
+    vertical-align: bottom;
+    margin: 0% 5% 5% 5%;
+    padding: 15;
+    text-align: center;
+     height: 50; /* Applied on iOS */
+}
+
+.list-places{
+    margin: 15;
+}
+.list-item{
+    font-size: 18;
+    vertical-align: center;
+    padding: 15;
+}
+
+.clear{
+    vertical-align: center;
+    horizontal-align: center;
+    padding: 10;
+}
+
+.home{
+    padding: 15 20 10 0;
+    color: white;
+    horizontal-align: right;
+}
+
+.back{
+    width: 35;
+    height: 35;
+    margin: 10 0 10 10;
+    horizontal-align: left;
+}
+
+.action-bar-title{
+    font-size: 20;
+    vertical-align: center;
+    margin-left: 24;
+    font-weight: bold;
+}
+
+

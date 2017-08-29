@@ -1,0 +1,83 @@
+.background{
+    background-color: #414042;
+    padding: 10 10 0 10;
+}
+
+.report-date{
+    font-size: 12;
+    color: #E6E6E6;
+    height: 25;
+    vertical-align: top;
+    padding-left: 10;
+}
+
+.report-title{
+    color: white;
+    font-size: 16;
+    vertical-align: center;
+    margin: 5 0 0 0;
+}
+
+.report-description{
+    color: white;
+    font-size: 14;
+    text-align: center;
+}
+
+.report-autor{
+    font-size: 12;
+    color: #E6E6E6;
+    padding-top: 10;
+}
+
+.report-address{
+    font-size: 12;
+    padding-top: 10;
+    color: white;
+    text-align: center;
+}
+
+.image{
+    background-color: #E6E6E6;
+    width: 100;
+    height: 100;
+    border-radius: 80;
+}
+
+.no-image{
+    height: 30;
+    width: 60;
+    vertical-align: center;
+    margin-top: 10
+}
+
+.no-image-label{
+    vertical-align: top;
+    text-align: center;
+    color: gray;
+    font-size: 12;
+}
+
+.categoryImage{
+    width: 40;
+    height: 40;
+    margin: 5 0 0 0;
+}
+
+.circle{
+    border-radius: 80;
+    border-color: white;
+    border-width: 2;
+}
+
+.fab-button {
+    height: 50;
+    width: 50; /* this is required on iOS - Android does not require width so you might need to adjust styles */
+    background-color: #0B4486; 
+    margin-right: 20;
+    horizontal-align: right;
+    padding: 0;
+}
+
+
+

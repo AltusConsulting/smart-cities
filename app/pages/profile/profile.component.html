@@ -1,0 +1,72 @@
+<ActionBar title="{{ 'profile' | L }}" icon="" class="action-bar">
+    <NavigationButton android.systemIcon="ic_menu_back" (tap)="goBack()"></NavigationButton>
+</ActionBar>
+<GridLayout rows="*">
+    <ScrollView>
+        <GridLayout row="0" rows="auto, auto, auto, auto, auto, *" class="margin" [visibility]="loadingPage? 'collapse' : 'visible'">
+            <!--PICTURE-->
+            <GridLayout row="0" rows="auto" columns="auto,*">
+                <StackLayout row="0" col="0"  class="circle" (tap)='uploadImage()' [visibility]="isVisibleImage? 'collapse' : 'visible'"
+                    verticalAlignment="center">
+                    <Image  rowspan="2" src="res://camera_white" id="image" stretch="aspectFit" class="camera"></Image>
+                    <Label text="{{ 'upload_image' | L }}" verticalAlignment="bottom" color="white" class="Raleway" ></Label>
+                </StackLayout>
+                <GridLayout row="0" col="0" class="margin">
+                    
+                    <ActivityIndicator row="0" class="activity" [busy]="loadingImage"></ActivityIndicator>
+                    
+                    <WebImage stretch="aspectFill" class="imageReport" [src]="image" [visibility]= "isVisibleImage?  'collapse':'visible'" placeholder="localPlaceholderImgorResUrl"></WebImage>
+                    <Image #container [src]="image" class="imageReport" [src]="image" stretch="aspectFill" [visibility]= "isVisibleImage?  'visible':'collapse'"></Image>
+                    
+                    <GridLayout class="circle-camera-icon"  [visibility]= "isVisibleImage?  'visible':'collapse'" (tap)='uploadImage()'>
+                        <Label text="&#xf030;" class="fa camera-icon" verticalAlignment="center" ></Label>
+                    </GridLayout>
+                </GridLayout>
+                <StackLayout col="1" verticalAlignment="center" horizontalAlignment="center">
+                    <GridLayout columns="auto,auto,auto,auto,auto" horizontalAlignment="center">
+                        <Label col="0" text="&#xf005;" class="fa star" textWrap="true"></Label>
+                        <Label col="1" text="&#xf005;" class="fa star" textWrap="true"></Label>
+                        <Label col="2" text="&#xf005;" class="fa star" textWrap="true"></Label>
+                        <Label col="3" text="&#xf005;" class="fa star" textWrap="true"></Label>
+                        <Label col="4" text="&#xf005;" class="fa star" textWrap="true"></Label>
+                    </GridLayout>
+                    <!--TOTAL-->
+                    <!--USER TYPE-->
+                    <Label text="20 reportes"  class="bold centerh Raleway"></Label>
+                    <Label text="Usuario avanzado"  class="centerh Raleway"></Label>
+                </StackLayout>
+            </GridLayout>
+
+            <!--NAME-->
+            <GridLayout row="1" columns="auto,*" class="textfield margin">
+                <Label row="0" col="0" text="&#xf007;" class="fa icon"></Label>
+                <Label row="0" col="1" [text]="username" class="Raleway username"></Label>
+            </GridLayout>
+            <!--EMAIL-->
+            <GridLayout row="2" columns="auto,*" class="textfield margin">
+                <Label row="0" col="0" text="&#xf0e0;" class="fa icon"></Label>
+                <TextField row="0" col="1" hint="{{ 'email' | L }}" [(ngModel)]="email" keyboardType="email" class="Raleway"></TextField>
+            </GridLayout>
+            <!--PASSWORD-->
+            <GridLayout row="3" columns="auto,*" class="textfield margin" >
+                <Label row="0" col="0" text="&#xf023;" class="fa icon"></Label>
+                <TextField row="0" col="1" hint="{{ 'change_password' | L }}" [(ngModel)]="password" secure="true" (tap)="change()" class="Raleway"></TextField>
+            </GridLayout>
+            <!--STARS-->
+
+            <Label row="4" text="{{ 'see_user_ranking' | L }}" class="bold underline centerh Raleway"></Label>
+            <GridLayout row="5" rows="auto" verticalAlignment="center">
+                <android>
+                    <Ripple #save class="save" row="0"  (tap)="verifyChanges()">
+                        <Label  class="height Raleway" color="#FFFFFF"  horizontalAlignment="center" text="{{ 'save_change' | L }}"></Label>  
+                    </Ripple>
+                </android>
+                <ios>
+                    <Label #save row="0" (tap)="verifyChanges()" class="save height Raleway" color="#FFFFFF"  horizontalAlignment="center" text="{{ 'save_change' | L }}"></Label>
+                </ios>
+            </GridLayout>
+
+        </GridLayout>
+    </ScrollView>
+    <ActivityIndicator row="0" width="50" height="50" [busy]="loading"></ActivityIndicator>
+</GridLayout>

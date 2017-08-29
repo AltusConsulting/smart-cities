@@ -1,0 +1,23 @@
+<GridLayout rows="auto, auto, auto" >
+    <StackLayout row="0" class="background" [visibility]="loading? 'collapse' : 'visible'">
+        <!-- IMAGE -->
+        <GridLayout rows="2*,*" class="image">
+            <ActivityIndicator row="0" rowspan="2" class="activity" busy="true" [visibility]="isVisibleImage? 'visible' : 'collapse'"></ActivityIndicator>
+            <Image row="0" src="res://no_image" stretch="aspectFill" class="no-image" [visibility]="isVisibleImage? 'collapse' : 'visible'"></Image>
+            <Image row="0" class="circle" rowspan="2" [src]="image" stretch="aspectFill" [visibility]="isVisibleImage? 'visible' : 'collapse'"></Image>
+            <Label row="1" text="{{ 'no_image' | L}}" class="no-image-label Raleway" [visibility]="isVisibleImage? 'collapse' : 'visible'"></Label>
+        </GridLayout>
+        <!-- REPORT TYPE -->
+        <GridLayout columns="auto, auto" horizontalAlignment="center">
+            <Image col="0" [src]="imageCategory" stretch='aspectFit' class="categoryImage"></Image>
+            <Label #categoryName col="1" [text]="serviceName" class="report-title Raleway" ></Label>
+        </GridLayout>
+        <!-- REPORT INFORMATION -->
+        <Label class="report-description Raleway" [text]="report.description" textWrap="true" row="3" [visibility]="isEmptyDescription? 'collapse' : 'visible'"></Label>
+        <Label class="report-address Raleway" [text]="report.addressString" textWrap="true"></Label>
+        <Label class="report-autor Raleway" [text]="report.accountID" textWrap="true" row="2"></Label>
+        
+    </StackLayout>
+    <Label row="1" backgroundColor="#414042" class="report-date Raleway" [text]="formattedDate" textWrap="true"></Label>
+    <FAB row="1" rowspan="2" icon="res://share" rippleColor="#f1f1f1" class="fab-button" verticalAlignment="bottom" ></FAB>
+</GridLayout>

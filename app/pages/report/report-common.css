@@ -1,0 +1,136 @@
+.accept{
+    color: white;
+    border-radius: 8;
+    border-width: 1;
+    vertical-align: bottom;
+    margin: 0 15 15 15;
+    padding: 15;
+    width: 93%;
+     height: 50; /* Applied on iOS */
+}
+
+.actionBar{
+    background-color: #0B4486;
+    color: white;
+}
+.camera-icon{
+    font-size: 20;
+    color: white;
+    text-align: center;
+}
+.circle-camera-icon{
+    background-color: #333333;
+    color: white;
+    width: 50;
+    height: 50;
+    border-radius: 80;
+    border-width: 1;
+    border-color: #333333;
+    text-align: center;
+    margin: 100 0 0 100;
+}
+.circle{
+    background-color: #0B4486;
+    color: white;
+    width: 150;
+    height:150;
+    border-radius: 80;
+    border-width: 1;
+    border-color: #0B4486;
+    text-align: center;
+    margin: 15% 0% 5% 0%
+}
+
+.checkbox{
+    color: white;
+    margin: 15;
+}
+
+.down-arrow{
+    margin: 0% 2% 0% 2%;
+    background-color: white;
+    color: #0B4486;
+}
+.dropDown {
+    color: #414042;
+    font-size: 16;
+    vertical-align: center;
+    padding: 10 0 10 10;
+}
+.imageReport{
+    width: 150;
+    height: 150;
+    border-radius: 80;
+}
+.camera{
+    width: 70%;
+    height: 40%;
+    margin: 0% 0% 5% 0%
+}
+.margin{
+    margin: 5 0 5 0;
+}
+.selector {
+    font-size: 18;
+    color: #414042;
+    vertical-align: center;
+    margin: 0 5 0 0;
+    padding: 10 0 10 10;
+}
+
+.textfield-format{
+    background-color: white;
+    border-radius: 8;
+    border-width: 1;
+    border-color: gray;
+    margin: 15 15 0 15;
+    padding: 5% 0% 5% 5%;
+    height: 50;
+    font-size: 15;
+    
+}
+
+.textfield{
+    border-width: 1;
+    border-color: white;
+    border-right-color: gray;
+    vertical-align: center;
+    font-size: 15;
+}
+
+.categoryImage{
+    width: 30;
+    height: 30;
+}
+
+.categoryLabel{
+    vertical-align: center;
+    color: gray;
+    font-size: 17;
+    text-transform: uppercase;
+
+}
+
+.coverImage{
+    background-image: url("res://report_background");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.home{
+    padding: 15 20 15 0;
+    color: gray;
+    horizontal-align: right;
+}
+
+.back{
+    width: 35;
+    height: 35;
+    margin: 10 0 15 12;
+    horizontal-align: left;
+}
+
+
+
+

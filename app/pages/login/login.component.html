@@ -1,0 +1,34 @@
+<GridLayout rows="*">
+    <ScrollView row="0">
+            <StackLayout row="0" class="coverImage">
+            
+               <Image class="logo" src="res://login_logo" stretch="aspectFit"></Image>
+
+                <TextField #username class="box input Raleway" hint="{{ 'username' | L }}" [(ngModel)]="user.Username"></TextField>
+                <TextField #password class="box input Raleway" hint="{{ 'password' | L }}" secure="true" [(ngModel)]="user.Password"></TextField>
+                
+                <Label text="{{ 'login' | L }}" horizontalAlignment="center" class="button text-blue Raleway" (tap)="login()"></Label>
+                
+                
+                <Button class="facebook-button text-white Raleway" text="{{ 'login_facebook' | L }}" (tap)="facebookLogin()"></Button>
+                <android>
+                    <Ripple (tap)="navigate('sign-up')">
+                        <Label class="sign-up-label Raleway" text="{{ 'sign_up' | L }}" horizontalAlignment="center" textWrap="true" ></Label>
+                    </Ripple>
+
+                    <Ripple (tap)="resetPassword()">
+                        <Label class="sign-up-label Raleway" text="{{ 'forgot_password' | L }}" horizontalAlignment="center" textWrap="true"></Label>
+                    </Ripple>
+                </android>
+                <ios>
+                    <Label (tap)="navigate('sign-up')" class="sign-up-label Raleway" text="{{ 'sign_up' | L }}" horizontalAlignment="center" textWrap="true" ></Label>
+                    <Label (tap)="resetPassword()" class="sign-up-label Raleway" text="{{ 'forgot_password' | L }}" horizontalAlignment="center" textWrap="true"></Label>
+                </ios>
+
+
+                <CheckBox #checkbox class="checkbox Raleway" fillColor="#FFFFFF" text="{{ 'anonymous' | L }}" checked="false" horizontalAlignment="center"></CheckBox>
+            </StackLayout> 
+    </ScrollView>
+
+    <ActivityIndicator row="0" width="50" height="50" [busy]="loading"></ActivityIndicator>
+</GridLayout>

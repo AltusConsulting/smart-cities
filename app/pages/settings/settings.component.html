@@ -1,0 +1,29 @@
+<ActionBar title="{{ 'settings' | L}}" class="action-bar" >
+  <NavigationButton android.systemIcon="ic_menu_back" (tap)="goBack()"></NavigationButton>
+</ActionBar>
+<ScrollView>
+  <StackLayout>
+    <Label text="{{ 'notifications' | L }}" class="title Raleway" textWrap="true"></Label>
+
+    <GridLayout columns="*,*">
+      <Label text="{{'reports' | L }}" class="label Raleway" row="2" col="0" textWrap="true"></Label>
+      <Switch #reports [checked]="reportCheck" class="switch" (checkedChange)="reportsChecked($event)" row="2" col="1"></Switch>
+    </GridLayout>
+
+    <GridLayout columns="*,*">
+      <Label text="{{ 'alerts' | L }}" class="label Raleway" row="3" col="0" textWrap="true"></Label>
+      <Switch [checked]="alertCheck" class="switch Raleway" (checkedChange)="alertChecked($event)" row="3" col="1" class="switch"></Switch>
+    </GridLayout>
+    <Border row="4" class="border"></Border>      
+
+    <Label text="{{ 'servers' | L }}" class="title Raleway" textWrap="true"></Label>
+    
+    <GridLayout rows="*,*" class="margin">
+        <Label text="{{ 'api_report' | L }}" class="Raleway" row="0" textWrap="true"></Label>
+        <TextField #apiTxtfld row="1" hint="open311 API" [(ngModel)]="current311Server" class="blackBox Raleway" marginTop="5"></TextField>
+    </GridLayout>
+
+    <Button text="{{ 'save_change' | L }}" (tap)="saveChanges()" class="save Raleway"></Button>
+    
+  </StackLayout>
+</ScrollView>

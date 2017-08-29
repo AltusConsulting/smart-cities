@@ -1,0 +1,10 @@
+<GridLayout rows="*,2*" class="coverImage" padding="15">
+    <StackLayout row="0">
+        <Label text="ALERTA" class="alert"></Label>
+        <Label [text]="description" class="description"></Label>
+    </StackLayout>
+    <GridLayout row="1" rows="auto, auto">
+        <Label row="0" text="Ver alerta" class="view-report" (tap)="viewAlert()"></Label>
+        <Label row="1" text="Saltar" class="skip" (tap)="close()"></Label>
+    </GridLayout>
+</GridLayout>
